@@ -4,16 +4,17 @@
 `animate.css` is a bunch of cool, fun, and cross-browser animations for you to use in your projects. Great for emphasis, home pages, sliders, and general just-add-water-awesomeness.
 
 ##Basic Usage
-1. Include the stylesheet on your document's `<head>`
+1. Include the stylesheet on your document's `<head>`（首先引入animate css文件）
 
   ```html
   <head>
     <link rel="stylesheet" href="animate.min.css">
   </head>
   ```
-2. Add the class `animated` to the element you want to animate.
+2. Add the class `animated` to the element you want to animate.（给指定的元素加上指定的动画样式名）
  You may also want to include the class `infinite` for an infinite loop.
 
+>  这里包括两个class名，第一个是基本的，必须添加的样式名，任何想实现的元素都得添加这个。第二个是指定的动画样式名。
 3. Finally you need to add one of the following classes:
 
   * `bounce`
@@ -107,13 +108,13 @@ To use animate.css in your website, simply drop the stylesheet into your documen
 </head>
 ```
 
-You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:
+You can do a whole bunch of other stuff with animate.css when you combine it with jQuery or add your own CSS rules. Dynamically add animations using jQuery with ease:(如果说想给某个元素动态添加动画样式，可以通过jquery来实现：)
 
 ```javascript
 $('#yourElement').addClass('animated bounceOutLeft');
 ```
 
-You can also detect when an animation ends:
+You can also detect when an animation ends:(当动画效果执行完成后还可以通过以下代码添加事件)
 
 <!--
 Before you make changes to this file, you should know that $('#yourElement').one() is *NOT A TYPO*
